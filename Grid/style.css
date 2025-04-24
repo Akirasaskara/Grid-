@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.grid-item {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.bg-1 {
+  background-color: #000000;
+}
+.bg-2 {
+  background-color: #ff0000;
+}
+.bg-3 {
+  background-color: #ffe100;
+}
+
+/* Grid 1 */
+.grid-1 {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+/* Grid 2 */
+.grid-2 {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+/* Grid 3 */
+.grid-3 {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+/* Dekstop*/
+@media screen and (min-width: 1024px) {
+  .grid-1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
